@@ -1,4 +1,5 @@
 # YaMDb API
+![workflow](https://github.com/sHvostom/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master&event=push)
 
 ### Описание проекта:
 
