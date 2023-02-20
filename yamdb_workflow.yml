@@ -29,10 +29,11 @@ jobs:
         # установка зависимостей
         pip install -r api_yamdb/requirements.txt
 
-    - name: Test with flake8 and django tests
+    - name: Test with flake8 and pytests tests
       run: |
         # запуск проверки проекта по flake8
         python -m flake8
+        pytest
   build_and_push_to_docker_hub:
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
