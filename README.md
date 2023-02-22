@@ -42,3 +42,55 @@ docker-compose exec web python manage.py collectstatic --no-input
 docker-compose exec web python manage.py loaddata ../infra/fixtures.json
 ```
 
+### Примеры запросов к API:
+
+Получение списка всех категорий:
+
+```
+http://127.0.0.1:8000/api/v1/categories/
+```
+
+```sh
+[
+    {
+        "count": 0,
+        "next": "string",
+        "previous": "string",
+        "results": []
+    }
+]
+```
+
+Получение списка всех жанров:
+
+```
+http://127.0.0.1:8000/api/v1/genres/
+```
+
+```sh
+[
+    {
+        "count": 0,
+        "next": "string",
+        "previous": "string",
+        "results": []
+    }
+]
+```
+
+Получение списка всех произведений:
+
+```
+http://127.0.0.1:8000/api/v1/titles/
+```
+
+```sh
+[
+    {
+        "count": 0,
+        "next": "string",
+        "previous": "string",
+        "results": []
+    }
+]
+```
